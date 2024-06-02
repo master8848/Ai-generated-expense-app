@@ -13,7 +13,8 @@
     "env:init": "sh ./scripts/env.sh",
     "dev": "sh scripts/dev.sh",
     "build": "next build",
-    "start": "sh scripts/start.sh",
+    "start": "next start -p 8099",
+    "start:bsk": "sh scripts/start.sh",
     "lint": "next lint",
     "check": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\""

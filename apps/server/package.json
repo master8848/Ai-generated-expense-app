@@ -8,11 +8,11 @@
     "dist"
   ],
   "engines": {
-    "node": "20.11.0",
+    "node": ">=20.11.0",
     "npm": "10.2.4"
   },
   "scripts": {
-    "init": "pnpm run docker:init ; pnpm env:init ; pnpm run database:migration:run",
+    "init": "pnpm run docker:init && pnpm env:init && pnpm run database:migration:run",
     "env:init": "sh ./scripts/env.sh",
     "dev": "nest start --debug --watch",
     "build": "nest build",
